@@ -98,21 +98,47 @@
 
 // function pass by reference
 
+// #include <iostream>
+// using namespace std;
+
+// void doSomething(int &x){
+//     cout << x << endl;
+//     x += 5;
+//     cout << x << endl;
+//     x += 5;
+//     cout << x << endl;
+
+// }
+
+// int main(){
+//    int x = 10;
+//    doSomething(x);
+//    cout << x << endl;
+//    return 0;
+// }
+
+// array pass by reference
+
 #include <iostream>
+
 using namespace std;
 
-void doSomething(int &x){
-    cout << x << endl;
-    x += 5;
-    cout << x << endl;
-    x += 5;
-    cout << x << endl;
-
+void doSomething(int arr[], int n){
+    arr[0] += 100;
+    cout << " Value inside function: " << arr[0] << endl;
 }
 
 int main(){
-   int x = 10;
-   doSomething(x);
-   cout << x << endl;
-   return 0;
+    int n = 10;
+    int arr[n];
+    for(int i=0; i<n; i++){
+        cin >> arr[i];
+    }
+
+    doSomething(arr, n);
+
+    cout << "Value in main: "<< arr[0] << endl;
+    return 0;
+
+
 }
