@@ -1,6 +1,7 @@
 {
-    "files.associations": {
-        "*.json": "cpp",
-        "vector": "cpp"
-    }
+  "files.associations": {
+    "*.json": "cpp",
+    "vector": "cpp",
+    "iostream": "cpp"
+  }
 }
