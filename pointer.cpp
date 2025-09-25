@@ -4,12 +4,12 @@
 using namespace std;
 
 int main(){
-    float point = 10;
-    float* ptr = &point;
+    // int a = 10;
+    // int* ptr = &a;
+    int a = 10;
+    int* ptr = &a;
 
-
-    cout << ptr << endl;
-    cout << &point << endl;
-
+    cout << *(&a) << endl;
+    cout << *(ptr) << endl;
     return 0;
 }

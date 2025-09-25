@@ -1,18 +1,18 @@
-#include <iostream>
+// #include <iostream>
 
-using namespace std;
+// using namespace std;
 
-void printNams(int n) {
-    if (n == 1) {
-        cout << n << endl;
-        return;
-    }
+// void printNams(int n) {
+//     if (n == 1) {
+//         cout << n << endl;
+//         return;
+//     }
 
-    cout << n << endl;
-    printNams(n - 1);
-}
+//     std::cout << n << std::endl;
+//     printNams(n - 1);
+// }
 
-int main(){
-    printNams(100);
-    return 0;
-}
+// int main(){
+//     printNams(100);
+//     return 0;
+// }
