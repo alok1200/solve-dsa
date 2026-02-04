@@ -30,3 +30,28 @@ int main()
         cout << arr[i] << " ";
     }
 }
+
+
+
+
+// #include <iostream>
+
+// using namespace std;
+
+// int main(){
+//     int arr[1000];
+//     int n;
+//     cout << "Enter the size of the array:  ";
+//     cin >> n;
+
+//     for(int i=0; i<n; i++){
+//         cin >> arr[i];
+//     }
+    
+//     // [10,30,2,5,4,6]
+
+//     for(int i=n-1; i>=0; i--){
+
+//     }
+    
+// }
