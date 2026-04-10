@@ -1,18 +1,36 @@
-// #include <iostream>
+#include <iostream>
 
-// using namespace std;
+using namespace std;
 
-// void printNams(int n) {
-//     if (n == 1) {
-//         cout << n << endl;
-//         return;
-//     }
+int factorial(int n)
+{
+    if (n <= 1)
+    {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
 
-//     std::cout << n << std::endl;
-//     printNams(n - 1);
-// }
+int main()
+{
+    // Always show a demo output so you can verify recursion works.
+    int demo = 5;
+    cout << "Demo: Factorial of " << demo << " is " << factorial(demo) << endl;
 
-// int main(){
-//     printNams(100);
-//     return 0;
-// }
+    int n;
+    cout << "Enter a number (or press Ctrl+D to skip): ";
+
+    if (!(cin >> n))
+    {
+        cout << "No input given. Demo output shown above." << endl;
+        return 0;
+    }
+
+    if (n < 0)
+    {
+        cout << "Factorial is not defined for negative numbers." << endl;
+        return 0;
+    }
+
+    cout << "Factorial of " << n << " is " << factorial(n) << endl;
+}
